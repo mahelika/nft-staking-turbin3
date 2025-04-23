@@ -117,7 +117,7 @@ impl<'info> Stake <'info> {
                 token_program,
             },
         )   
-        .invoke_signed(signer_seeds)?;   
+        .invoke_signed(signers_seeds)?;   
         self.stake_account.set_inner(StakeAccount { 
             owner: self.user.key(),
             mint:self.mint.key(),

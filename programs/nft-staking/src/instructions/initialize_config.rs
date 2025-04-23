@@ -14,7 +14,7 @@ pub struct InitializeConfig<'info> {
         bump,
         space = 8 + StakeConfig::INIT_SPACE
     )]
-    pub config: Account<'info, StateConfig>,
+    pub config: Account<'info, StakeConfig>,
     #[account(
         init,
         payer = admin,
